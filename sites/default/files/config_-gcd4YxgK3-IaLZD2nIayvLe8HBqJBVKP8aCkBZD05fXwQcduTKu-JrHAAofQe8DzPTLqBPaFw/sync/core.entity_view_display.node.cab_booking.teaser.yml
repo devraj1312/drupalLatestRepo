@@ -1,0 +1,46 @@
+uuid: 6a3509f6-df09-497f-8b37-6a7df5ad83aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cab_booking.body
+    - field.field.node.cab_booking.field_booking_id
+    - field.field.node.cab_booking.field_cab_name
+    - field.field.node.cab_booking.field_date_time
+    - field.field.node.cab_booking.field_drop
+    - field.field.node.cab_booking.field_pickup
+    - field.field.node.cab_booking.field_ride_price
+    - field.field.node.cab_booking.field_status
+    - field.field.node.cab_booking.field_user
+    - node.type.cab_booking
+  module:
+    - text
+    - user
+id: node.cab_booking.teaser
+targetEntityType: node
+bundle: cab_booking
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_booking_id: true
+  field_cab_name: true
+  field_date_time: true
+  field_drop: true
+  field_pickup: true
+  field_ride_price: true
+  field_status: true
+  field_user: true

@@ -1,0 +1,11 @@
+enabled: true
+allowedHeaders:
+  - '*'
+allowedMethods:
+  - 'GET, POST, PATCH, DELETE, OPTIONS'
+allowedOrigins:
+  - 'http://localhost:5173'
+exposedHeaders:
+  - '*'
+maxAge: null
+supportsCredentials: true

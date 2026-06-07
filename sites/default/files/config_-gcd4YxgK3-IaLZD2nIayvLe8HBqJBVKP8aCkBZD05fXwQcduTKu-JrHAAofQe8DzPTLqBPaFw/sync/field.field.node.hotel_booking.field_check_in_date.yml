@@ -1,0 +1,21 @@
+uuid: 173413ee-2f37-41b0-a371-d613008082b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_check_in_date
+    - node.type.hotel_booking
+  module:
+    - datetime
+id: node.hotel_booking.field_check_in_date
+field_name: field_check_in_date
+entity_type: node
+bundle: hotel_booking
+label: 'Check In Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

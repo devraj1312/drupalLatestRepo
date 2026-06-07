@@ -1,0 +1,19 @@
+uuid: 7d171e03-c001-4ca6-9ab8-bc830c9123af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pickup
+    - node.type.cab_booking
+id: node.cab_booking.field_pickup
+field_name: field_pickup
+entity_type: node
+bundle: cab_booking
+label: Pickup
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

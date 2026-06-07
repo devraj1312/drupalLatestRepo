@@ -1,0 +1,5 @@
+name: JWT Auth
+type: module
+description: Custom JWT Authentication
+core_version_requirement: ^10
+package: Custom

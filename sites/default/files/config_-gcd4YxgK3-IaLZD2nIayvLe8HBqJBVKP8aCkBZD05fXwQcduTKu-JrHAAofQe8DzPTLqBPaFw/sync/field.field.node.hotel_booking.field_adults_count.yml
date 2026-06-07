@@ -1,0 +1,23 @@
+uuid: a7028172-213a-4de5-9a1d-d76d1596983b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adults_count
+    - node.type.hotel_booking
+id: node.hotel_booking.field_adults_count
+field_name: field_adults_count
+entity_type: node
+bundle: hotel_booking
+label: 'Adults Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,19 @@
+uuid: 5b249be6-7f26-482f-868e-23a11a71bc4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_id
+    - node.type.hotels
+id: node.hotels.field_hotel_id
+field_name: field_hotel_id
+entity_type: node
+bundle: hotels
+label: 'Hotel ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

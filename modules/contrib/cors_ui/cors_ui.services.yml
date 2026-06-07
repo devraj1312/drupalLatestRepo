@@ -1,0 +1,9 @@
+services:
+  cors_ui.config_subscriber:
+    class: Drupal\cors_ui\EventSubscriber\ConfigSubscriber
+    arguments:
+      - '@kernel'
+      - '@cache_tags.invalidator'
+    tags:
+      - { name: event_subscriber }
+      - { name: needs_destruction }

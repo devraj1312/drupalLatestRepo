@@ -1,0 +1,7 @@
+location_api.search:
+  path: '/api/location'
+  defaults:
+    _controller: '\Drupal\location_api\Controller\LocationController::search'
+    _title: 'Location Search'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,23 @@
+uuid: 2de09eda-28c9-4b8c-a3c3-54c5bb3fb352
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_per_km
+    - node.type.cabs
+id: node.cabs.field_price_per_km
+field_name: field_price_per_km
+entity_type: node
+bundle: cabs
+label: 'Price per km'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

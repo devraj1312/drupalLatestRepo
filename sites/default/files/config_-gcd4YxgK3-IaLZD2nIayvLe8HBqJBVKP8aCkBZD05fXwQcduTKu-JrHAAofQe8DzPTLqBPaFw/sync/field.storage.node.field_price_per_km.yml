@@ -1,0 +1,20 @@
+uuid: 86b5497f-d668-4826-a8ae-337008c05468
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_price_per_km
+field_name: field_price_per_km
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: dd63b8fd-6598-428b-8398-694cf4c91689
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_base_price
+    - node.type.hotels
+id: node.hotels.field_base_price
+field_name: field_base_price
+entity_type: node
+bundle: hotels
+label: 'Base Price'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

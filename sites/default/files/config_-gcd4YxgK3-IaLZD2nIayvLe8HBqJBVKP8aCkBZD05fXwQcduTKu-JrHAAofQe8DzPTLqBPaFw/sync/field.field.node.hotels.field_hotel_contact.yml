@@ -1,0 +1,19 @@
+uuid: 1373f673-9137-4379-b9a2-2d11f08cd73d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_contact
+    - node.type.hotels
+id: node.hotels.field_hotel_contact
+field_name: field_hotel_contact
+entity_type: node
+bundle: hotels
+label: 'Hotel Contact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

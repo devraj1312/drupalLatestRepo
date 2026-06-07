@@ -1,0 +1,5 @@
+name: Location API
+type: module
+description: Provides location search API
+core_version_requirement: ^10
+package: Custom

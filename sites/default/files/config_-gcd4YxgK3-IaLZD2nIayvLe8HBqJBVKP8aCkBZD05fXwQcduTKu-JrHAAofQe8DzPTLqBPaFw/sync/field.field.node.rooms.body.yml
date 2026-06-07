@@ -1,0 +1,26 @@
+uuid: 718d1852-fee6-4f16-831a-326246368fab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.plain_text
+    - node.type.rooms
+  module:
+    - text
+id: node.rooms.body
+field_name: body
+entity_type: node
+bundle: rooms
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - plain_text
+field_type: text_with_summary

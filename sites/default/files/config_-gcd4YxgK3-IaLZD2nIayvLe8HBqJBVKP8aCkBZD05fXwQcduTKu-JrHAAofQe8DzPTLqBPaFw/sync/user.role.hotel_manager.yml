@@ -1,0 +1,18 @@
+uuid: 31ac10a9-7bfa-42b6-8bfc-8b4ac789f954
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hotel_booking
+  module:
+    - hotel_inventory
+    - node
+    - system
+id: hotel_manager
+label: 'Hotel Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access hotel inventory'
+  - 'edit any hotel_booking content'

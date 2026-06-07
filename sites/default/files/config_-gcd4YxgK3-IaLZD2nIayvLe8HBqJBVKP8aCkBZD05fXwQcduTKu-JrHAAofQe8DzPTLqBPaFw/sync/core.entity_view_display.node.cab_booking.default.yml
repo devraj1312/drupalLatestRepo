@@ -1,0 +1,96 @@
+uuid: 8dc127a0-34b0-4d5a-9e44-47f231390f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cab_booking.body
+    - field.field.node.cab_booking.field_booking_id
+    - field.field.node.cab_booking.field_cab_name
+    - field.field.node.cab_booking.field_date_time
+    - field.field.node.cab_booking.field_drop
+    - field.field.node.cab_booking.field_pickup
+    - field.field.node.cab_booking.field_ride_price
+    - field.field.node.cab_booking.field_status
+    - field.field.node.cab_booking.field_user
+    - node.type.cab_booking
+  module:
+    - datetime
+    - options
+    - user
+id: node.cab_booking.default
+targetEntityType: node
+bundle: cab_booking
+mode: default
+content:
+  field_booking_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_cab_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_date_time:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_drop:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pickup:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_ride_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true

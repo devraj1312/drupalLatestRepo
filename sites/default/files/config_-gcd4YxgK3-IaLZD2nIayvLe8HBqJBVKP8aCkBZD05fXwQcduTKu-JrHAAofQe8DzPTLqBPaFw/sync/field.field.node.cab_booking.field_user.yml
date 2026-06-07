@@ -1,0 +1,29 @@
+uuid: 38d4311b-b439-4e4e-8c02-31f77047eb52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.cab_booking
+id: node.cab_booking.field_user
+field_name: field_user
+entity_type: node
+bundle: cab_booking
+label: User
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

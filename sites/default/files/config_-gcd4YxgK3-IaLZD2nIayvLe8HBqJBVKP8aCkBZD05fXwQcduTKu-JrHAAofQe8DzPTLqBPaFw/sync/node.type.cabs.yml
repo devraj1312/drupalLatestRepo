@@ -1,0 +1,18 @@
+uuid: 3df7e315-9cf7-474c-b3ab-0e077411eaef
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Cabs
+type: cabs
+description: 'List of cabs.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,21 @@
+uuid: 588a20b8-0593-47ff-8e79-111961c87c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_booking_status
+    - node.type.hotel_booking
+  module:
+    - options
+id: node.hotel_booking.field_hotel_booking_status
+field_name: field_hotel_booking_status
+entity_type: node
+bundle: hotel_booking
+label: 'Hotel Booking Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

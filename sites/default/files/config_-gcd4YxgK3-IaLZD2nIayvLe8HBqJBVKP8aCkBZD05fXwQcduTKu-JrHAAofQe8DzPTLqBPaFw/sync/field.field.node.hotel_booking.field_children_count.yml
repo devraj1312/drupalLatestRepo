@@ -1,0 +1,23 @@
+uuid: 7011b04b-9e9a-40d3-9b99-f4f1b9c32a21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_children_count
+    - node.type.hotel_booking
+id: node.hotel_booking.field_children_count
+field_name: field_children_count
+entity_type: node
+bundle: hotel_booking
+label: 'Children Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

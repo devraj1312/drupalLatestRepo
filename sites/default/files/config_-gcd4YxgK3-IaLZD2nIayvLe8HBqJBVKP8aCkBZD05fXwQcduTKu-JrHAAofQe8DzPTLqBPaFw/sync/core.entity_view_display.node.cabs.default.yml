@@ -1,0 +1,72 @@
+uuid: 134c6b82-2b15-44b1-9e77-95a50d8a89db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cabs.body
+    - field.field.node.cabs.field_cab_image
+    - field.field.node.cabs.field_capacity
+    - field.field.node.cabs.field_price_per_km
+    - field.field.node.cabs.field_type
+    - node.type.cabs
+  module:
+    - image
+    - text
+    - user
+id: node.cabs.default
+targetEntityType: node
+bundle: cabs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cab_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_capacity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_price_per_km:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

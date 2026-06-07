@@ -1,0 +1,30 @@
+uuid: e1b23505-868e-48e2-9684-47ad9dce7cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_assigned_hotel
+    - node.type.hotels
+  module:
+    - user
+id: user.user.field_assigned_hotel
+field_name: field_assigned_hotel
+entity_type: user
+bundle: user
+label: 'Assigned Hotel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      hotels: hotels
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

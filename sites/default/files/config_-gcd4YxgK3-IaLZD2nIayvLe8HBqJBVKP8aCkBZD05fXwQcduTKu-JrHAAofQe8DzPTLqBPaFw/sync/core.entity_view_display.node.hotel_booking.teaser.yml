@@ -1,0 +1,52 @@
+uuid: d7920c00-f228-4e2b-b75c-5277899f22fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hotel_booking.body
+    - field.field.node.hotel_booking.field_adults_count
+    - field.field.node.hotel_booking.field_check_in_date
+    - field.field.node.hotel_booking.field_check_out_date
+    - field.field.node.hotel_booking.field_children_count
+    - field.field.node.hotel_booking.field_hotel
+    - field.field.node.hotel_booking.field_hotel_booking_amount
+    - field.field.node.hotel_booking.field_hotel_booking_id
+    - field.field.node.hotel_booking.field_hotel_booking_status
+    - field.field.node.hotel_booking.field_hotel_booking_user
+    - field.field.node.hotel_booking.field_room_type
+    - field.field.node.hotel_booking.field_rooms_count
+    - node.type.hotel_booking
+  module:
+    - text
+    - user
+id: node.hotel_booking.teaser
+targetEntityType: node
+bundle: hotel_booking
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_adults_count: true
+  field_check_in_date: true
+  field_check_out_date: true
+  field_children_count: true
+  field_hotel: true
+  field_hotel_booking_amount: true
+  field_hotel_booking_id: true
+  field_hotel_booking_status: true
+  field_hotel_booking_user: true
+  field_room_type: true
+  field_rooms_count: true

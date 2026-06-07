@@ -1,0 +1,23 @@
+uuid: c37c2d85-62e8-4dd0-8e7a-1d3554195ec3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booked_rooms
+    - node.type.rooms
+id: node.rooms.field_booked_rooms
+field_name: field_booked_rooms
+entity_type: node
+bundle: rooms
+label: 'Booked Rooms'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

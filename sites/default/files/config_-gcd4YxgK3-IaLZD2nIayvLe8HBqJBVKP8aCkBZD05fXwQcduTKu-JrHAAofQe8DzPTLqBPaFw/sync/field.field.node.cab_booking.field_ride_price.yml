@@ -1,0 +1,23 @@
+uuid: 1df359df-4531-4db9-888f-b2b495abedaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ride_price
+    - node.type.cab_booking
+id: node.cab_booking.field_ride_price
+field_name: field_ride_price
+entity_type: node
+bundle: cab_booking
+label: 'Ride Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

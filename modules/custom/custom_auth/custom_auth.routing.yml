@@ -1,0 +1,26 @@
+custom_auth.register:
+  path: '/api/register'
+  defaults:
+    _controller: '\Drupal\custom_auth\Controller\AuthController::register'
+    _format: 'json'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+cab_booking.user_bookings:
+  path: '/api/user-bookings'
+  defaults:
+    _controller: '\Drupal\cab_booking\Controller\CabBookingController::getUserBookings'
+    _title: 'User Bookings'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+
+custom_auth.profile:
+  path: '/api/profile'
+  defaults:
+    _controller: '\Drupal\custom_auth\Controller\AuthController::profile'
+    _title: 'Profile'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'

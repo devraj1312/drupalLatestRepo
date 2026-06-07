@@ -1,0 +1,19 @@
+uuid: b5f1a7b1-f8d3-4b70-ae47-d476a70e3c43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_booking_id
+    - node.type.hotel_booking
+id: node.hotel_booking.field_hotel_booking_id
+field_name: field_hotel_booking_id
+entity_type: node
+bundle: hotel_booking
+label: 'Hotel Booking ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

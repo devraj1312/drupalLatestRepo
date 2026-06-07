@@ -1,0 +1,38 @@
+<?php
+
+function custom_otp_auth_schema() {
+  $schema['otp_storage'] = [
+    'description' => 'OTP storage table',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'phone' => [
+        'type' => 'varchar',
+        'length' => 15,
+      ],
+      'otp' => [
+        'type' => 'varchar',
+        'length' => 10,
+      ],
+      'created_at' => [
+        'type' => 'int',
+      ],
+      'expires_at' => [
+        'type' => 'int',
+      ],
+      'is_used' => [
+        'type' => 'int',
+        'default' => 0,
+      ],
+      'attempts' => [
+        'type' => 'int',
+        'default' => 0,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

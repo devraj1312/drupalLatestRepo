@@ -1,0 +1,21 @@
+uuid: 98aba1ba-3ae6-4bf5-ac8a-06978f526561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ac_non_ac
+    - node.type.rooms
+id: node.rooms.field_ac_non_ac
+field_name: field_ac_non_ac
+entity_type: node
+bundle: rooms
+label: 'AC / Non-AC'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

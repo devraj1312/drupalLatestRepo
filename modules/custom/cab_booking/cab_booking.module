@@ -1,0 +1,67 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_entity_presave().
+ */
+function cab_booking_entity_presave(EntityInterface $entity) {
+
+  // Sirf cab_booking content type pe apply hoga
+  if ($entity->getEntityTypeId() === 'node' && $entity->bundle() === 'cab_booking') {
+
+    // 🔒 Edit case → ID change na hone do
+    if (!$entity->isNew()) {
+      $original = $entity->original;
+
+      if ($original && !$original->get('field_booking_id')->isEmpty()) {
+        $entity->set(
+          'field_booking_id',
+          $original->get('field_booking_id')->value
+        );
+      }
+      return;
+    }
+
+    // 🔥 NEW booking → auto generate ID
+    if ($entity->isNew()) {
+
+        $last_id = \Drupal::database()
+            ->query("
+            SELECT MAX(
+                CAST(SUBSTRING(field_booking_id_value, 10) AS UNSIGNED)
+            )
+            FROM {node__field_booking_id}
+            WHERE field_booking_id_value LIKE 'CAB-%'
+            ")
+            ->fetchField();
+
+        // ✅ Safety fix
+        $next_id = (!empty($last_id) && is_numeric($last_id)) ? (int)$last_id + 1 : 1;
+
+        $year = date('Y');
+
+        $booking_id = 'CAB-' . $year . '-' . str_pad($next_id, 4, '0', STR_PAD_LEFT);
+
+        $entity->set('field_booking_id', $booking_id);
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function cab_booking_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  // Sirf cab booking form pe apply karo
+  if ($form_id == 'node_cab_booking_form' || $form_id == 'node_cab_booking_edit_form') {
+
+    if (isset($form['field_booking_id'])) {
+
+      // 🔒 Read-only (hotel jaisa)
+      $form['field_booking_id']['widget'][0]['value']['#disabled'] = TRUE;
+
+    }
+  }
+}

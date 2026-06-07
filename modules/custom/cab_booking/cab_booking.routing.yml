@@ -1,0 +1,25 @@
+cab_booking.book:
+  path: '/api/cab-booking'
+  defaults:
+    _controller: '\Drupal\cab_booking\Controller\CabBookingController::book'
+    _title: 'Book Cab'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+cab_booking.user_bookings:
+  path: '/api/user-bookings'
+  defaults:
+    _controller: '\Drupal\cab_booking\Controller\CabBookingController::getUserBookings'
+    _title: 'User Cab Bookings'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+
+cab_booking.cancel:
+  path: '/api/cancel-cab-booking/{booking_id}'
+  defaults:
+    _controller: '\Drupal\cab_booking\Controller\CabBookingController::cancelCabBooking'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'

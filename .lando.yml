@@ -1,0 +1,9 @@
+name: first
+recipe: drupal10
+config:
+  webroot: .
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database

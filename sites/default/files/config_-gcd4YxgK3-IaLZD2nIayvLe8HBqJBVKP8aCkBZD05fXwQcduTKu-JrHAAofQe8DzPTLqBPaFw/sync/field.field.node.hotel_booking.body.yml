@@ -1,0 +1,24 @@
+uuid: 0475462d-c02e-4c55-b6a0-7c0654f1c0a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hotel_booking
+  module:
+    - text
+id: node.hotel_booking.body
+field_name: body
+entity_type: node
+bundle: hotel_booking
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

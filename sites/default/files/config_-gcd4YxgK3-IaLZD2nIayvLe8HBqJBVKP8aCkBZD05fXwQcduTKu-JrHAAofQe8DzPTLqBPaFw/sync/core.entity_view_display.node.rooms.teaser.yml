@@ -1,0 +1,44 @@
+uuid: 68f23633-2d27-4628-b887-7fc66cffc9f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rooms.body
+    - field.field.node.rooms.field_ac_non_ac
+    - field.field.node.rooms.field_available_rooms
+    - field.field.node.rooms.field_booked_rooms
+    - field.field.node.rooms.field_hotel_reference
+    - field.field.node.rooms.field_price
+    - field.field.node.rooms.field_room_image
+    - field.field.node.rooms.field_total_rooms
+    - node.type.rooms
+  module:
+    - text
+    - user
+id: node.rooms.teaser
+targetEntityType: node
+bundle: rooms
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ac_non_ac: true
+  field_available_rooms: true
+  field_booked_rooms: true
+  field_hotel_reference: true
+  field_price: true
+  field_room_image: true
+  field_total_rooms: true

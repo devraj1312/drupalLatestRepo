@@ -1,0 +1,25 @@
+hotel_booking.book:
+  path: '/api/hotel-booking'
+  defaults:
+    _controller: '\Drupal\hotel_booking\Controller\HotelBookingController::hotelbook'
+    _title: 'Cab Booking API'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
+
+hotel_booking.user_bookings:
+  path: '/api/user-hotel-bookings'
+  defaults:
+    _controller: '\Drupal\hotel_booking\Controller\HotelBookingController::getUserHotelBookings'
+    _title: 'User Hotel Bookings'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+
+hotel_booking.cancel:
+  path: '/api/cancel-hotel-booking/{booking_id}'
+  defaults:
+    _controller: '\Drupal\hotel_booking\Controller\HotelBookingController::cancelHotelBooking'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'

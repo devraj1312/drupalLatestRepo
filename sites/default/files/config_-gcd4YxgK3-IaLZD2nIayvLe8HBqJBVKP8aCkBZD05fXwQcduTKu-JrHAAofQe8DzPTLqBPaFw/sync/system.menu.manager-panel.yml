@@ -1,0 +1,8 @@
+uuid: 738aac3f-d4d1-40bb-b004-9b8f04a2ba2b
+langcode: en
+status: true
+dependencies: {  }
+id: manager-panel
+label: 'Manager Panel'
+description: 'Manager operation menu'
+locked: false

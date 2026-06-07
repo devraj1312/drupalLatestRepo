@@ -1,0 +1,20 @@
+uuid: 6a32471d-cc23-423b-9303-c7f2602a4548
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_adults_count
+field_name: field_adults_count
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

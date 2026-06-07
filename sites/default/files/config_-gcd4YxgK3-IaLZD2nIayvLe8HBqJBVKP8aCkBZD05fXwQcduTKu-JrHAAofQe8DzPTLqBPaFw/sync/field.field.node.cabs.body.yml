@@ -1,0 +1,26 @@
+uuid: 27d14b8b-af57-426e-9d34-ebc06aee841d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.plain_text
+    - node.type.cabs
+  module:
+    - text
+id: node.cabs.body
+field_name: body
+entity_type: node
+bundle: cabs
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - plain_text
+field_type: text_with_summary

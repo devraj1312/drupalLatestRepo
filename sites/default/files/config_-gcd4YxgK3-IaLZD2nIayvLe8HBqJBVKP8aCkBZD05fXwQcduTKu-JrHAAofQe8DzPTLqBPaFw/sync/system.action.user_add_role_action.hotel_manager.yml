@@ -1,0 +1,14 @@
+uuid: 6e229e00-a171-4edb-b661-b7bb5107026d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hotel_manager
+  module:
+    - user
+id: user_add_role_action.hotel_manager
+label: 'Add the Hotel Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hotel_manager

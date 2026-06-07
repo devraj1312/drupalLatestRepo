@@ -1,0 +1,285 @@
+_core:
+  default_config_hash: CXhei_vpaZk-3f_Mj2cH0YmpK-ZpKHoSzVA3yZrDq0g
+definitions:
+  contact__site_page:
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  system__admin_content:
+    weight: -64
+    menu_name: admin
+    parent: system.admin
+    enabled: true
+    expanded: false
+  system__admin_structure:
+    weight: -63
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__themes_page:
+    weight: -62
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__modules_list:
+    weight: -61
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_config:
+    weight: -60
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  entity__user__collection:
+    weight: -59
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_reports:
+    weight: -58
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  help__main:
+    weight: -57
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  announcements_feed__announcement:
+    weight: -56
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin:
+    weight: -64
+    menu_name: admin
+    parent: ''
+    enabled: true
+    expanded: false
+  hotel_inventory__manage:
+    weight: -53
+    parent: system.admin
+    menu_name: admin
+    enabled: false
+    expanded: false
+  comment__admin:
+    weight: -64
+    menu_name: admin
+    parent: system.admin_content
+    enabled: true
+    expanded: false
+  block__admin_display:
+    weight: -64
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__block_content_type__collection:
+    weight: -63
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__comment_type__collection:
+    weight: -61
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__contact_form__collection:
+    weight: -60
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__node_type__collection:
+    weight: -59
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  field_ui__display_mode:
+    weight: -58
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__menu__collection:
+    weight: -57
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__collection:
+    weight: -56
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__view__collection:
+    weight: -55
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  user__admin_index:
+    weight: -64
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_system:
+    weight: -63
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__site_information_settings:
+    weight: -63
+    menu_name: admin
+    parent: system.admin_config_system
+    expanded: false
+    enabled: true
+  system__cron_settings:
+    weight: -62
+    menu_name: admin
+    parent: system.admin_config_system
+    expanded: false
+    enabled: true
+  system__admin_config_content:
+    weight: -62
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_ui:
+    weight: -61
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  entity__shortcut_set__collection:
+    weight: -63
+    menu_name: admin
+    parent: system.admin_config_ui
+    expanded: false
+    enabled: true
+  system__admin_config_development:
+    weight: -60
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_media:
+    weight: -58
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_search:
+    weight: -57
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_regional:
+    weight: -56
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_services:
+    weight: -55
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  cors_ui__config_form:
+    weight: -64
+    menu_name: admin
+    parent: system.admin_config_services
+    expanded: false
+    enabled: true
+  jsonapi__settings:
+    weight: -62
+    menu_name: admin
+    parent: system.admin_config_services
+    expanded: false
+    enabled: true
+  system__rss_feeds_settings:
+    weight: -61
+    menu_name: admin
+    parent: system.admin_config_services
+    expanded: false
+    enabled: true
+  system__linkset_settings:
+    weight: -60
+    menu_name: admin
+    parent: system.admin_config_services
+    expanded: false
+    enabled: true
+  system__admin_config_workflow:
+    weight: -54
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__status:
+    weight: -64
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true
+  update__status:
+    weight: -63
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true
+  dblog__overview:
+    weight: -62
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true
+  entity__field_storage_config__collection:
+    weight: -61
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true
+  dblog__access_denied:
+    weight: -60
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true
+  dblog__page_not_found:
+    weight: -59
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true
+  dblog__search:
+    weight: -58
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true
+  views_ui__reports_plugins:
+    weight: -57
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    enabled: true

@@ -1,0 +1,20 @@
+uuid: a73e06c8-3208-42f4-a300-c9e2c8d1a74b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rooms_count
+field_name: field_rooms_count
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: f677fe37-194d-46f9-a4d4-3f8e2aa9b9ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available_rooms
+    - node.type.rooms
+id: node.rooms.field_available_rooms
+field_name: field_available_rooms
+entity_type: node
+bundle: rooms
+label: 'Available Rooms'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

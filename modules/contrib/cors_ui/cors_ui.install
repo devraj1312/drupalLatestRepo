@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Install file for the CORS UI module.
+ */
+
+use Drupal\cors_ui\CorsUiConfig;
+
+/**
+ * Implements hook_install().
+ */
+function cors_ui_install(): void {
+  $cors_config = \Drupal::getContainer()->getParameter('cors.config');
+  // Normalize options to what we allow in the config schema so that schema
+  // validation passes.
+  $cors_config = CorsUiConfig::normalize((array) $cors_config);
+  \Drupal::configFactory()->getEditable('cors_ui.configuration')
+    ->setData($cors_config)
+    ->save();
+}

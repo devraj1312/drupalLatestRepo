@@ -1,0 +1,33 @@
+uuid: 9dffbcf5-3573-4641-8c4f-84fe05e9581b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.manager-panel
+  module:
+    - system
+    - user
+  theme:
+    - claro
+id: claro_managerpanel
+theme: claro
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:manager-panel'
+settings:
+  id: 'system_menu_block:manager-panel'
+  label: 'Manager Panel'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      hotel_manager: hotel_manager

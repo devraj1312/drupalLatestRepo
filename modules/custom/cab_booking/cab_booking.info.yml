@@ -1,0 +1,5 @@
+name: Cab Booking
+type: module
+description: Manage cab bookings
+core_version_requirement: ^10
+package: Custom

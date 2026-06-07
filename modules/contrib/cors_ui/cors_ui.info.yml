@@ -1,0 +1,12 @@
+name: CORS UI
+description: A user interface for CORS handling in Drupal.
+package: Other
+core_version_requirement: ^9 || ^10 || ^11
+type: module
+
+configure: cors_ui.config_form
+
+# Information added by Drupal.org packaging script on 2025-03-04
+version: '8.x-1.3'
+project: 'cors_ui'
+datestamp: 1741101539

@@ -1,0 +1,8 @@
+jwt_auth.login:
+  path: '/api/login'
+  defaults:
+    _controller: '\Drupal\jwt_auth\Controller\AuthController::login'
+    _title: 'Login API'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'

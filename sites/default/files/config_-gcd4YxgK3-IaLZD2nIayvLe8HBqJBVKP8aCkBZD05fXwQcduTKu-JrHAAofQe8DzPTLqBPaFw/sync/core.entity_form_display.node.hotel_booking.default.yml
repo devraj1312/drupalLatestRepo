@@ -1,0 +1,154 @@
+uuid: 33f3e753-0086-49a1-b376-b5901354d7da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hotel_booking.body
+    - field.field.node.hotel_booking.field_adults_count
+    - field.field.node.hotel_booking.field_check_in_date
+    - field.field.node.hotel_booking.field_check_out_date
+    - field.field.node.hotel_booking.field_children_count
+    - field.field.node.hotel_booking.field_hotel
+    - field.field.node.hotel_booking.field_hotel_booking_amount
+    - field.field.node.hotel_booking.field_hotel_booking_id
+    - field.field.node.hotel_booking.field_hotel_booking_status
+    - field.field.node.hotel_booking.field_hotel_booking_user
+    - field.field.node.hotel_booking.field_room_type
+    - field.field.node.hotel_booking.field_rooms_count
+    - node.type.hotel_booking
+  module:
+    - datetime
+    - path
+id: node.hotel_booking.default
+targetEntityType: node
+bundle: hotel_booking
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_adults_count:
+    type: number
+    weight: 12
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_check_in_date:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_check_out_date:
+    type: datetime_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_children_count:
+    type: number
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_hotel:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hotel_booking_amount:
+    type: number
+    weight: 16
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_hotel_booking_id:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hotel_booking_status:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hotel_booking_user:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_room_type:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rooms_count:
+    type: number
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  title: true

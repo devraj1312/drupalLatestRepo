@@ -1,0 +1,7 @@
+name: Custom OTP Auth
+type: module
+description: OTP login system
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:user

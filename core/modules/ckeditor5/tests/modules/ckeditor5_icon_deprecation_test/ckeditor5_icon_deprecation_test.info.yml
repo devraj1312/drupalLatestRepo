@@ -1,0 +1,12 @@
+name: CKEditor icon deprecation test
+type: module
+description: "Provides test CKEditor5 plugin with deprecated Drupal element styles icon config"
+package: Testing
+# version: VERSION
+dependencies:
+  - ckeditor5:ckeditor5
+
+# Information added by Drupal.org packaging script on 2025-06-19
+version: '10.5.0'
+project: 'drupal'
+datestamp: 1750294241

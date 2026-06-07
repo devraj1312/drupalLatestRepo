@@ -1,0 +1,136 @@
+uuid: 210d0f29-32c8-4968-9feb-9d334375c8a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hotel_booking.body
+    - field.field.node.hotel_booking.field_adults_count
+    - field.field.node.hotel_booking.field_check_in_date
+    - field.field.node.hotel_booking.field_check_out_date
+    - field.field.node.hotel_booking.field_children_count
+    - field.field.node.hotel_booking.field_hotel
+    - field.field.node.hotel_booking.field_hotel_booking_amount
+    - field.field.node.hotel_booking.field_hotel_booking_id
+    - field.field.node.hotel_booking.field_hotel_booking_status
+    - field.field.node.hotel_booking.field_hotel_booking_user
+    - field.field.node.hotel_booking.field_room_type
+    - field.field.node.hotel_booking.field_rooms_count
+    - node.type.hotel_booking
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.hotel_booking.default
+targetEntityType: node
+bundle: hotel_booking
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_adults_count:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_check_in_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_check_out_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_children_count:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_hotel:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_hotel_booking_amount:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_hotel_booking_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_hotel_booking_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_hotel_booking_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_room_type:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_rooms_count:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

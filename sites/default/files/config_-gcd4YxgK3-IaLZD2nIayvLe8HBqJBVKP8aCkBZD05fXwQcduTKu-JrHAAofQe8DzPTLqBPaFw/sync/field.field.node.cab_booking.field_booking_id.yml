@@ -1,0 +1,19 @@
+uuid: 5f308348-4369-4fea-bca6-f8a8acc3427e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booking_id
+    - node.type.cab_booking
+id: node.cab_booking.field_booking_id
+field_name: field_booking_id
+entity_type: node
+bundle: cab_booking
+label: 'Booking ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

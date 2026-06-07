@@ -1,0 +1,14 @@
+uuid: 5252c96b-ece0-424a-a7f7-db5efafddc4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hotel_manager
+  module:
+    - user
+id: user_remove_role_action.hotel_manager
+label: 'Remove the Hotel Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hotel_manager

@@ -1,0 +1,13 @@
+hotel_inventory.manage:
+  title: 'Hotel Inventory'
+  description: 'Manage hotel inventory'
+  route_name: hotel_inventory.manage
+  parent: system.admin_content
+  weight: 10
+
+hotel_inventory.manager_bookings_redirect:
+  title: 'Hotel Bookings'
+  description: 'View your hotel bookings'
+  route_name: hotel_inventory.manager_bookings_redirect
+  parent: system.admin_content
+  weight: 11

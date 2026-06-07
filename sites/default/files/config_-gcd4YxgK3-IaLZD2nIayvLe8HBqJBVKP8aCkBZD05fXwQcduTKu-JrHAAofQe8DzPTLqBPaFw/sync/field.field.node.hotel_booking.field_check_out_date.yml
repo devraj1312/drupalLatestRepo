@@ -1,0 +1,21 @@
+uuid: 944c05a6-aa68-4ca8-90a3-56f009d572d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_check_out_date
+    - node.type.hotel_booking
+  module:
+    - datetime
+id: node.hotel_booking.field_check_out_date
+field_name: field_check_out_date
+entity_type: node
+bundle: hotel_booking
+label: 'Check Out Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

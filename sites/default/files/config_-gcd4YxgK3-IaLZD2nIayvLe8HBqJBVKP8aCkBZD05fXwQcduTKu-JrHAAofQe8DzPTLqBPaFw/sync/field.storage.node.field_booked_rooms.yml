@@ -1,0 +1,20 @@
+uuid: b0c3abef-86fe-4935-9b2a-661c4d77273c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_booked_rooms
+field_name: field_booked_rooms
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

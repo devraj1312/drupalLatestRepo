@@ -1,0 +1,33 @@
+uuid: 19c973ae-55a7-4425-8aa7-ddc317c52d01
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_status
+field_name: field_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pending
+      label: Pending
+    -
+      value: confirmed
+      label: Confirmed
+    -
+      value: cancelled
+      label: Cancelled
+    -
+      value: completed
+      label: Completed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,33 @@
+uuid: a2fb13c4-6832-4269-8e2d-bb24859944f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.manager-panel
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_managerpanel
+theme: olivero
+region: highlighted
+weight: -7
+provider: null
+plugin: 'system_menu_block:manager-panel'
+settings:
+  id: 'system_menu_block:manager-panel'
+  label: 'Manager Panel'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      hotel_manager: hotel_manager

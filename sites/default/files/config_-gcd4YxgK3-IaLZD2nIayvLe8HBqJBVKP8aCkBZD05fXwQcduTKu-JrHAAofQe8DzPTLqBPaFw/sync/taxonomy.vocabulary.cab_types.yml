@@ -1,0 +1,9 @@
+uuid: 9d871469-d24a-4d30-a632-b8758fb2914a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cab Types'
+vid: cab_types
+description: 'Types of car'
+weight: 0
+new_revision: false

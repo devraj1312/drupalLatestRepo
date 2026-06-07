@@ -1,0 +1,23 @@
+uuid: 239076f4-40fb-489d-827e-dbe1ae57db82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capacity
+    - node.type.cabs
+id: node.cabs.field_capacity
+field_name: field_capacity
+entity_type: node
+bundle: cabs
+label: Capacity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

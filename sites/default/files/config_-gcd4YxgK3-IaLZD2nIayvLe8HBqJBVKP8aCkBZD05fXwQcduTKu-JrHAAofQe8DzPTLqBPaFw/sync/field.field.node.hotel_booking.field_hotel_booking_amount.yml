@@ -1,0 +1,23 @@
+uuid: 0ad32992-d9bc-4911-a24e-4e1a6cd454bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_booking_amount
+    - node.type.hotel_booking
+id: node.hotel_booking.field_hotel_booking_amount
+field_name: field_hotel_booking_amount
+entity_type: node
+bundle: hotel_booking
+label: 'Hotel Booking Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

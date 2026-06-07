@@ -1,0 +1,5 @@
+name: Hotel Booking
+type: module
+description: Handles hotel booking API
+core_version_requirement: ^10
+package: Custom

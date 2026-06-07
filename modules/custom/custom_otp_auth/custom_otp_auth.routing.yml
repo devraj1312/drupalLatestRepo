@@ -1,0 +1,17 @@
+custom_otp_auth.send_otp:
+  path: '/api/send-otp'
+  defaults:
+    _controller: '\Drupal\custom_otp_auth\Controller\OtpController::sendOtp'
+    _format: 'json'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+custom_otp_auth.verify_otp:
+  path: '/api/verify-otp'
+  defaults:
+    _controller: '\Drupal\custom_otp_auth\Controller\OtpController::verifyOtp'
+    _format: 'json'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
