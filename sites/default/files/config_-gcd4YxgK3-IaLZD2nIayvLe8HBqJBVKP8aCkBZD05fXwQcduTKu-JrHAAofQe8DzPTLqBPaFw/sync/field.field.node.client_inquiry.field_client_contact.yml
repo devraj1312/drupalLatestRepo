@@ -1,0 +1,19 @@
+uuid: c74f0de9-96e7-4860-b371-add271d7af18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_contact
+    - node.type.client_inquiry
+id: node.client_inquiry.field_client_contact
+field_name: field_client_contact
+entity_type: node
+bundle: client_inquiry
+label: 'Client Contact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

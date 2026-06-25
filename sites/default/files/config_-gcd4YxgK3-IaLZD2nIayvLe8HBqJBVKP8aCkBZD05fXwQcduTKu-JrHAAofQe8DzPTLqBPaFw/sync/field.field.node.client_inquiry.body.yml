@@ -1,0 +1,26 @@
+uuid: f9961df6-ef05-45c3-8a6e-5b58ace135bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.restricted_html
+    - node.type.client_inquiry
+  module:
+    - text
+id: node.client_inquiry.body
+field_name: body
+entity_type: node
+bundle: client_inquiry
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - restricted_html
+field_type: text_with_summary

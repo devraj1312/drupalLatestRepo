@@ -1,0 +1,14 @@
+uuid: 56e9409f-8bfa-4339-95d3-a30eeb48411e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.client_inquiry
+  module:
+    - node
+id: manager
+label: Manager
+weight: 5
+is_admin: null
+permissions:
+  - 'edit any client_inquiry content'

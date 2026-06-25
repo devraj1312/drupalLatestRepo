@@ -1,0 +1,19 @@
+uuid: b9c0091c-d297-48da-9b66-fbb2baa736b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_name
+    - node.type.client_inquiry
+id: node.client_inquiry.field_client_name
+field_name: field_client_name
+entity_type: node
+bundle: client_inquiry
+label: 'Client Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

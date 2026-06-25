@@ -8,55 +8,55 @@ definitions:
     expanded: false
     enabled: true
   system__admin_content:
-    weight: -64
+    weight: -66
     menu_name: admin
     parent: system.admin
     enabled: true
     expanded: false
   system__admin_structure:
-    weight: -63
+    weight: -65
     menu_name: admin
     parent: system.admin
     expanded: false
     enabled: true
   system__themes_page:
-    weight: -62
+    weight: -64
     menu_name: admin
     parent: system.admin
     expanded: false
     enabled: true
   system__modules_list:
-    weight: -61
+    weight: -63
     menu_name: admin
     parent: system.admin
     expanded: false
     enabled: true
   system__admin_config:
-    weight: -60
+    weight: -62
     menu_name: admin
     parent: system.admin
     expanded: false
     enabled: true
   entity__user__collection:
-    weight: -59
+    weight: -61
     menu_name: admin
     parent: system.admin
     expanded: false
     enabled: true
   system__admin_reports:
-    weight: -58
+    weight: -60
     menu_name: admin
     parent: system.admin
     expanded: false
     enabled: true
   help__main:
-    weight: -57
+    weight: -59
     menu_name: admin
     parent: system.admin
     expanded: false
     enabled: true
   announcements_feed__announcement:
-    weight: -56
+    weight: -58
     menu_name: admin
     parent: system.admin
     expanded: false
@@ -68,11 +68,11 @@ definitions:
     enabled: true
     expanded: false
   hotel_inventory__manage:
-    weight: -53
-    parent: system.admin
+    weight: -55
     menu_name: admin
-    enabled: false
+    parent: system.admin
     expanded: false
+    enabled: false
   comment__admin:
     weight: -64
     menu_name: admin

@@ -1,0 +1,8 @@
+client_inquiry.submit:
+  path: '/api/client-inquiry'
+  defaults:
+    _controller: '\Drupal\client_inquiry\Controller\ClientInquiryController::submit'
+    _title: 'Client Inquiry'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
