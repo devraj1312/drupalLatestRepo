@@ -1,6 +1,6 @@
 uuid: 01d009d5-aa24-45cb-bc8d-f825bb0c5cab
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.node.field_booking_id
