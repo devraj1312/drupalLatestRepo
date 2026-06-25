@@ -1,0 +1,30 @@
+uuid: 259c73e1-c4a1-473f-908c-5597dac3fb27
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_inquiry_category
+field_name: field_inquiry_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: darshan
+      label: Darshan
+    -
+      value: pooja
+      label: Pooja
+    -
+      value: cab
+      label: Cab
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

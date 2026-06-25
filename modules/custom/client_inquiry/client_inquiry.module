@@ -1,0 +1,27 @@
+<?php
+
+function client_inquiry_form_node_client_inquiry_edit_form_alter(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+) {
+
+  $fields = [
+    'title',
+    'field_client_id',
+    'field_client_name',
+    'field_client_contact',
+    'field_inquiry_category',
+    'field_event_date',
+    'field_event_time',
+    'field_order_amount',
+    'body',
+  ];
+
+  foreach ($fields as $field) {
+    if (isset($form[$field])) {
+      $form[$field]['#disabled'] = TRUE;
+    }
+  }
+
+}

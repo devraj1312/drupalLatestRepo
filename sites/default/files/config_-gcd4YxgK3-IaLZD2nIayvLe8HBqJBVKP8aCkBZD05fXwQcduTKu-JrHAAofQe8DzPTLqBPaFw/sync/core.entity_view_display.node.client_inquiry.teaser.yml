@@ -1,0 +1,48 @@
+uuid: 96a7a8bf-eddd-4e5d-bfc9-1d6bff214a9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.client_inquiry.body
+    - field.field.node.client_inquiry.field_booking_status
+    - field.field.node.client_inquiry.field_client_contact
+    - field.field.node.client_inquiry.field_client_id
+    - field.field.node.client_inquiry.field_client_name
+    - field.field.node.client_inquiry.field_event_date
+    - field.field.node.client_inquiry.field_event_time
+    - field.field.node.client_inquiry.field_inquiry_category
+    - field.field.node.client_inquiry.field_order_amount
+    - field.field.node.client_inquiry.field_payment_status
+    - node.type.client_inquiry
+  module:
+    - text
+    - user
+id: node.client_inquiry.teaser
+targetEntityType: node
+bundle: client_inquiry
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_booking_status: true
+  field_client_contact: true
+  field_client_id: true
+  field_client_name: true
+  field_event_date: true
+  field_event_time: true
+  field_inquiry_category: true
+  field_order_amount: true
+  field_payment_status: true
