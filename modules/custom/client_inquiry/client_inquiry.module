@@ -1,10 +1,23 @@
 <?php
 
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
 function client_inquiry_form_node_client_inquiry_edit_form_alter(
   &$form,
-  \Drupal\Core\Form\FormStateInterface $form_state,
+  FormStateInterface $form_state,
   $form_id
 ) {
+
+  $current_user = \Drupal::currentUser();
+
+  // Sirf Manager role ke liye.
+  if (!$current_user->hasRole('manager')) {
+    return;
+  }
 
   $fields = [
     'title',
@@ -23,5 +36,4 @@ function client_inquiry_form_node_client_inquiry_edit_form_alter(
       $form[$field]['#disabled'] = TRUE;
     }
   }
-
 }
