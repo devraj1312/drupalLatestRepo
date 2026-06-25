@@ -1,0 +1,23 @@
+uuid: bc83fee0-643f-40ae-872e-c68a5c692445
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order_amount
+    - node.type.client_inquiry
+id: node.client_inquiry.field_order_amount
+field_name: field_order_amount
+entity_type: node
+bundle: client_inquiry
+label: 'Order Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

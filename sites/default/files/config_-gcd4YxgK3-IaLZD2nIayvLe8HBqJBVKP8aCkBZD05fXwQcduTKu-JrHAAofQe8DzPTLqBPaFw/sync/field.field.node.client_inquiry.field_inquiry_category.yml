@@ -1,0 +1,21 @@
+uuid: 1538af60-33d6-47dd-987f-38fac455cc43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inquiry_category
+    - node.type.client_inquiry
+  module:
+    - options
+id: node.client_inquiry.field_inquiry_category
+field_name: field_inquiry_category
+entity_type: node
+bundle: client_inquiry
+label: 'Inquiry Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

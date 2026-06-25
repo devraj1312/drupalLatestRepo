@@ -1,0 +1,5 @@
+name: Client Inquiry
+type: module
+description: Manage Client Inquiry
+core_version_requirement: ^10
+package: Custom

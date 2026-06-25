@@ -1,0 +1,23 @@
+uuid: 9280cdba-a4e6-42c8-a462-b95b954d8139
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booking_status
+    - node.type.client_inquiry
+  module:
+    - options
+id: node.client_inquiry.field_booking_status
+field_name: field_booking_status
+entity_type: node
+bundle: client_inquiry
+label: 'Booking Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: pending
+default_value_callback: ''
+settings: {  }
+field_type: list_string
